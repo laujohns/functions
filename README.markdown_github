@@ -46,8 +46,4 @@ x = read.csv("table.csv")
 **Final Product**
 -----------------
 
-``` {r}
-print(table, quote=F, align="c")
-```
-
-output=html\_document
+`{r eval=TRUE, echo=FALSE} print(table, quote=F, align="c")`
