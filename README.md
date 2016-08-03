@@ -3,13 +3,13 @@
 
 1. **First create a test dataset**
 
-'''{r}
-n <- 30
-df <- data.frame(var1 = seq (1:n), 
+[sourcecode language="r"]
+    n <- 30
+    df <- data.frame(var1 = seq (1:n), 
                  var2 = sample(35:100, n, rep=T),
                  var3 = seq(2, 55, length.out=n))
-'''
-                 
+[/sourcecode]
+
 2. **Next create a function that calculates the geometric mean and standard deviation**
 
   * In the below example, the "paste" function concatenates the geometric mean and standard deviations by adding parenthases around the standard deviation (e.g., GM(GSD))
