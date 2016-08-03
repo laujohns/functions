@@ -50,5 +50,5 @@ kable(table, align="c", col.names = c("Geo Mean (Geo SD)"))
 |            | Geo Mean (Geo SD) |
 |------------|:-----------------:|
 | Variable 1 |    12.04 (2.34)   |
-| Variable 2 |    64.83 (1.40)   |
+| Variable 2 |    66.00 (1.41)   |
 | Variable 3 |    22.29 (2.30)   |
