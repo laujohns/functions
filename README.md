@@ -3,10 +3,12 @@
 
 1. **First create a test dataset**
 
+'''{r}
     n <- 30
     df <- data.frame(var1 = seq (1:n), 
                  var2 = sample(35:100, n, rep=T),
                  var3 = seq(2, 55, length.out=n))
+'''
 
 2. **Next create a function that calculates the geometric mean and standard deviation**
 
