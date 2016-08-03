@@ -43,7 +43,6 @@ x = read.csv("table.csv")
 ```
 ## **Final Product**
 
-```{r}
+```{r eval=TRUE, echo=FALSE}
 print(table, quote=F, align="c")
 ```
-output=html_document
