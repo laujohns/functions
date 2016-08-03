@@ -3,7 +3,7 @@
 
 1. **First create a test dataset**
 
-'''r
+'''{r}
 n <- 30
 df <- data.frame(var1 = seq (1:n), 
                  var2 = sample(35:100, n, rep=T),
@@ -15,7 +15,7 @@ df <- data.frame(var1 = seq (1:n),
   * In the below example, the "paste" function concatenates the geometric mean and standard deviations by adding parenthases around the standard deviation (e.g., GM(GSD))
   * The formatC function keeps 2 digits after the rounded statistics (use this if you want the trailing 0 in rounded numbers)
 
-'''r
+'''{r}
 geo<-function(x){
       geomean.x<-exp(mean(log(x[which(!is.na(x))])))
       geosd.x<-exp(sd(log(x[which(!is.na(x))])))
@@ -27,7 +27,7 @@ geo<-function(x){
 
 3. **Create a table of these statistics and save as a CSV file**
 
-'''r
+'''{r}
 table<-rbind(geo(df$var1),geo(df$var2), geo(df$var3))
 rownames(table)<-c("Variable 1",'Variable 2','Variable 3')
 colnames(table)<-c("GM(GSD)")
