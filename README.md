@@ -39,7 +39,7 @@ x = read.csv("table.csv")
 ```
 ## **Final Product**
 
-```{r echo=FALSE}
+```{r example, eval=TRUE, echo=FALSE}
 library(knitr)
 geo<-function(x){
       geomean.x<-exp(mean(log(x[which(!is.na(x))])))
